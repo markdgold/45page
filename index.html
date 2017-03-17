@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SBP 45</title>
+  <link rel="stylesheet" href="css/cssReset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nouislider.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <script src="js/nouislider.js"></script>
+  <script src="js/filter_climbs.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<header class="head" href="index.html">
+  <img src="img/sbpLogo.png" id="sbpLogo" class="img-responsive" alt="sbpLogo">
+  <div id="h1Div">
+    <a href="index.html"><h1 id="h1">The 45</h1></a>
+  </div>
+  <nav>
+    <ul class ="nav">
+      <li class="current"><a href="index.html">Climbs</a></li>
+      <li><a href="#" id="filterLink">Filter</a></li>
+      <li><a href="add_new_climb.html">New</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul> 
+  </nav>
+</header>
+
+<section id="mainContent" class="container-fluid">
+  <!-- Filter Form -->
+  <div id="filterForm">
+    Style:
+    <form>
+      <input name="power" type="checkbox">Power
+      <input name="tech" type="checkbox">Tech
+      <input name="crimp" type="checkbox">Crimp
+      <input name="oneMover" type="checkbox">One-Mover
+      <input name="enduro" type="checkbox">Enduro
+      <input name="openHand" type="checkbox">Open Hand
+      <input name="all" type="checkbox" checked>All
+    </form>
+
+    Set By:
+    <select onchange="setBy.call(this, event)">
+      <option value="MDG" id="MDGset">MDG</option>
+      <option value="DNA">DNA</option>
+      <option value="NUG">NUG</option>
+      <option value="All" selected>All</option>
+    </select><br>
+
+    Select Grade Range:
+    <span id="slider-step-value-lower"></span>
+    -
+    <span id="slider-step-value-upper"></span>
+    <div id=slider-step></div>
+   
+    <!-- New click -->
+    <form>
+      <input name = "new" type="checkbox">New
+    </form>
+  </div>
+  <br>
+  <!-- Modal -->
+  <div id="modal" class="modal">
+   <!-- Modal Caption (Image Text) --> 
+   <div id="caption"></div>
+
+    <!-- The Close Button -->
+   <span class="close" onclick="document.getElementById('modal').style.display='none'"></span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img" src="">
+
+  </div>
+</section>
+
+<br>
+<footer>
+  &copy 2017 Mark Goldstein
+</footer>
+</body>
+<script src="js/make_article.js"></script>
+<script src="js/filter_climbs.js"></script>
+<script src="js/make_modal.js"></script>
+</html>

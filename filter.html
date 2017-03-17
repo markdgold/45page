@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SBP 45</title>
+  <link rel="stylesheet" href="css/cssReset.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<header class="head">
+	<img src="img/sbpLogo.png" id="sbpLogo" class="img-responsive" alt="sbpLogo">
+	<div id="h1Div">
+		<h1>The 45</h1>
+	</div>
+	<nav>
+		<ul class ="nav">
+			<li class="current"><a href="index.html">Climbs</a></li>
+			<li><a href="filter.html" id="filterLink">Filter</a></li>
+			<li><a href="add_new_climb.html">Add New</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>	
+	</nav>
+</header>
+
+<section id="mainContent" class="container-fluid">
+<div id="testDisplay">Test</div>
+<div id="filterForm">
+<form>Style:
+  <input name="power" type="checkbox">Power
+  <input name="tech" type="checkbox">Tech
+  <input name="crimp" type="checkbox">Crimp
+  <input name="all" type="checkbox" checked>All
+</form>
+
+Set By:
+<select>
+  <option value="MDG">MDG</option>
+  <option value="DNA">DNA</option>
+  <option value="NUG">NUG</option>
+  <option value="All" selected>All</option>
+</select><br>
+
+Max Grade:
+<input type="range" id=#gradeSlider min="0" max="12" value="0" onclick="showValue(this.value)">
+<span id="range">0</span>
+<br>
+<script type="text/javascript">
+function showValue(newValue)
+{
+  document.getElementById("range").innerHTML=newValue;
+}
+</script>
+
+Min Grade:
+<input type="range" id=#gradeSlider2 min="0" max="12" value="0" onclick="showValueMin(this.value)">
+<span id="rangeMin">0</span>
+<br>
+<script type="text/javascript">
+function showValueMin(newValueMin)
+{
+  document.getElementById("rangeMin").innerHTML=newValueMin;
+}
+</script>
+
+<form>
+  <input name = "new" type="checkbox">New
+</form>
+
+</div>
+<br>
+</section>
+
+<br>
+<footer>
+	Mark Goldstein 2017
+</footer>
+</body>
+<script src="js/make_article.js"></script>
+<script src="js/filter_climbs.js"></script>
+</html>

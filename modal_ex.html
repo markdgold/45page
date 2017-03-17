@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SBP 45</title>
+  <!-- <link rel="stylesheet" href="cssReset.css"> -->
+  
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+<header class="head">
+	<img src="img/sbpLogo.png" id="sbpLogo" class="img-responsive" alt="sbpLogo">
+	<div id="h1Div">
+		<h1>The 45</h1>
+	</div>
+	<nav>
+		<ul class ="nav">
+			<li><a href="index.html">All</a></li>
+			<li><a href="new.html">New</a></li>
+			<li class="current"><a href="exp_page.html">Filter</a></li>
+			<li><a href="#">Add New</a></li>
+		</ul>	
+	</nav>
+</header>
+
+<section id="mainContent" class="container-fluid">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01" src="http://i.imgur.com/lrEgqY6.jpg">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption">Sphere Grippin</div>
+</div>
+
+<div id="myModalTwo" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModalTwo').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img02" src="http://i.imgur.com/R6ttzpn.jpg">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="captionTwo">So Many Circles</div>
+</div>
+
+<article id="myImg" href="http://i.imgur.com/lrEgqY6.jpg">
+	<header class = "problems">
+		Sphere Grippin
+		<p>
+		V8
+		</p>
+		<p>
+		Set by: MDG, 5/10/16
+		</p>
+	</header>
+</article>
+
+<article id="myImgTwo" href="http://i.imgur.com/R6ttzpn.jpg">
+	<header class = "problems">
+		So many circles
+		<p>
+		V8
+		</p>
+		<p>
+		Set by: MDG, 5/10/16
+		</p>
+	</header>
+</article>
+
+</section>
+<script src="js/modal.js"></script>
+</body>
+</html>

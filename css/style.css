@@ -1,0 +1,165 @@
+body{
+	margin:0;
+	font-family: "Quicksand", sans-serif;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+header.head{
+	height: 164px;
+}
+h1{
+	display: inline-block;
+	margin: 10px;
+	text-align: center;
+	font-size: 60px;
+	font-weight: lighter;
+}
+nav{
+	position: relative;
+	border-bottom: dotted black 2px;
+	border-top: dotted black 2px;
+	top: 3px;
+}
+ul.nav{
+	list-style: none;
+	display: block;
+	text-align: center;
+}
+#sbpLogo{
+	width: 100px;
+	display: inline-block;
+	margin: -13px 0 3px 3px;
+}
+#h1Div{
+	display: inline-block;
+	position: relative;
+	top:12px;
+}
+li{
+	display: inline-block !important;
+	margin: 0 auto;
+	width: 22%;
+	text-align: center;
+}
+li.current{
+	font-weight:bolder;
+}
+a{
+	text-decoration:none;
+	text-align: center;
+}
+nav a:hover{
+	font-weight: bolder;
+	background-color: white !important;
+}
+header.head a{
+	color: black;
+}
+
+/*body*/
+#mainContent{
+	text-align:center;
+}
+#filterForm{
+	display:inline-block;
+}
+article{
+	height: 400px;
+	width: 380px;
+	display: inline-block;
+	background-size: cover;
+	margin: 3px;
+	border-radius: 5px;
+}
+
+
+article a{
+	display: block;
+	height: 400px;
+	text-decoration: none !important;
+}
+p{
+	color: rgba(0,0,0,0);
+}
+
+header.problems{
+	position: relative;
+	bottom: -360px;
+	background: rgba(0,0,0,.25);
+	border-radius: 0 0 5px 5px;
+	width: 100%;
+	height: 40px;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	transition: height .5s, bottom .5s;
+}
+
+header.problems{
+	color: white;
+}
+article:hover header.problems{
+	height: 97px;
+	position: relative;
+	bottom: -303px;
+}
+article:hover p{
+	color: white;
+	transition-delay: .3s;
+}
+footer{
+	display:inline-block;
+	width: 100%;
+	padding-left: 3px;
+	border-top: dotted rgb(200,200,200) 2px;
+}
+#bottomFooter{
+	position: absolute;
+	bottom: 0px;
+}
+#banner{
+	width: 55%;
+}
+input[type=range]{
+	display: inline-block;
+	width: 38%
+}
+
+#filterForm{
+	display: none;
+	border: black dotted 2px;
+	width: 77%;
+	padding: 0 10% 0 10%;
+	margin: auto;
+	background: white;
+	z-index: 10000;
+}
+
+#templateImage{
+	display: inline-block;
+	width:200px;
+	height:200px;
+	background-image: url("http://i.imgur.com/SIB4KFm.jpg");
+	background-size: cover;
+	border-radius: 50%;
+}
+
+@media screen and (max-width: 480px){
+	article{
+		width: 100%;
+	}
+	#filterForm{
+		width: 100%;
+		padding: 0 3% 0 3%;
+	}
+	header.problems{
+		height: 97px;
+		position: relative;
+		bottom: -303px;
+	}
+	article p{
+		color: white;
+	}
+	#banner{
+		width: 100%;
+	}
+}
