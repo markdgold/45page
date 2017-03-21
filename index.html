@@ -17,6 +17,7 @@
   <meta name="theme-color" content="#ffffff">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <script src="js/nouislider.js"></script>
+  <script src="js/make_article.js"></script>
   <script src="js/filter_climbs.js"></script>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
@@ -47,13 +48,11 @@
       <input name="crimp" type="checkbox">Crimp
       <input name="oneMover" type="checkbox">One-Mover
       <input name="enduro" type="checkbox">Enduro
-      <input name="openHand" type="checkbox">Open Hand
-      <input name="all" type="checkbox" checked>All
     </form>
 
     Set By:
-    <select onchange="setBy.call(this, event)">
-      <option value="MDG" id="MDGset">MDG</option>
+    <select id="setBy" onchange="checkClimb.call(this, event)">
+      <option value="MDG">MDG</option>
       <option value="DNA">DNA</option>
       <option value="NUG">NUG</option>
       <option value="All" selected>All</option>
@@ -66,7 +65,7 @@
     <div id=slider-step></div>
    
     <!-- New click -->
-    <form>
+    <form id="new">
       <input name = "new" type="checkbox">New
     </form>
   </div>
