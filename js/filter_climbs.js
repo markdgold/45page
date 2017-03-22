@@ -27,8 +27,13 @@ var crimpSelector = document.querySelector('input[name=crimp]');
 var oneMoverSelector = document.querySelector('input[name=oneMover]');
 var enduroSelector = document.querySelector('input[name=enduro]');
 var newSelector = document.querySelector('input[name=new]');
+var setBySelector = document.getElementById('setBy');
 var year = new Date().getFullYear();
 var month = new Date().getMonth()+1;
+var AllSet = $('#setBy option[value="All"]'); 
+var MDG = $('#setBy option[value="MDG"]');
+var DNA = $('#setBy option[value="DNA"]');
+var NUG = $('#setBy option[value="NUG"]');
 
 //grade selector
 var stepSlider = document.getElementById('slider-step');
@@ -85,13 +90,29 @@ function checkClimb(){
         if(climbs[i].grade >stepSlider.noUiSlider.get()[1] || climbs[i].grade <stepSlider.noUiSlider.get()[0]){
             climb.css("display", "none");
         }
+        if(MDG.prop('selected')){
+            console.log("MDG selected");
+            if(climbs[i].setBy != 'MDG'){
+                climb.css("display", "none");
+            }
+        }
+        else if(DNA.prop('selected')){
+            if(climbs[i].setBy != 'DNA'){
+                climb.css("display", "none");
+            }
+        }
+        else if(NUG.prop('selected')){
+            if(climbs[i].setBy != 'NUG'){
+                climb.css("display", "none");
+            }
+        }
     }
 }
 
 function filterClimbs(){
     $('article').css('display', 'none');
     checkClimb()
-}
+};
 
 
 powerSelector.addEventListener('change',filterClimbs);
@@ -100,21 +121,4 @@ enduroSelector.addEventListener('change', filterClimbs);
 techSelector.addEventListener('change',filterClimbs);
 oneMoverSelector.addEventListener('change',filterClimbs);
 newSelector.addEventListener('change',filterClimbs);
-
-
-//set by
-function setBy(event){
-    var setBy = this.options[this.selectedIndex].text;
-    console.log(document.getElementById('MDGset').innerHTML)
-    for(i=0; i<climbs.length; i++){
-        if(setBy == 'All'){
-            document.getElementById(climbs[i].name).style.display = "inline-block";
-        }
-        else if(climbs[i].setBy != setBy){
-            document.getElementById(climbs[i].name).style.display = "none";
-        }
-        else{
-            document.getElementById(climbs[i].name).style.display = "inline-block";
-        }
-    }
-};
+setBySelector.addEventListener('change', filterClimbs); 

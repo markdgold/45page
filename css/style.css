@@ -141,6 +141,7 @@ input[type=range]{
 	height:200px;
 	background-image: url("http://i.imgur.com/SIB4KFm.jpg");
 	background-size: cover;
+	background-color: black;
 	border-radius: 50%;
 }
 
@@ -152,10 +153,12 @@ input[type=range]{
 @media screen and (max-width: 480px){
 	article{
 		width: 100%;
+		margin-left: 0px;
 	}
 	#filterForm{
 		width: 100%;
 		padding: 0 3% 0 3%;
+		height: 169px;
 	}
 	header.problems{
 		height: 97px;
@@ -167,8 +170,5 @@ input[type=range]{
 	}
 	#banner{
 		width: 100%;
-	}
-	#filterForm{
-		height: 162px;
 	}
 }

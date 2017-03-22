@@ -51,12 +51,13 @@
     </form>
 
     Set By:
-    <select id="setBy" onchange="checkClimb.call(this, event)">
+    <select id="setBy">
       <option value="MDG">MDG</option>
       <option value="DNA">DNA</option>
       <option value="NUG">NUG</option>
       <option value="All" selected>All</option>
-    </select><br>
+    </select>
+    <br>
 
     Select Grade Range:
     <span id="slider-step-value-lower"></span>
@@ -76,7 +77,7 @@
    <div id="caption"></div>
 
     <!-- The Close Button -->
-   <span class="close" onclick="document.getElementById('modal').style.display='none'"></span>
+   <span class="close"></span>
 
     <!-- Modal Content (The Image) -->
     <img class="modal-content" id="img" src="">
