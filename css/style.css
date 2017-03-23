@@ -82,6 +82,17 @@ article a{
 p{
 	color: rgba(0,0,0,0);
 }
+.colorSpan{
+	display: inline-block;
+	width: 15%;
+	margin-right: -7px;
+}
+.colorSpan:first-child{
+	border-radius: 50px 0 0 50px;
+}
+.colorSpan:last-child{
+	border-radius: 0 50px 50px 0;
+}
 
 header.problems{
 	position: relative;
@@ -94,7 +105,21 @@ header.problems{
 	text-align: center;
 	transition: height .5s, bottom .5s;
 }
-
+.o header.problems{
+	background: #DEAF01;
+}
+.p header.problems{
+	background: #581845;
+}
+.b header.problems{
+	background: black;
+}
+.r header.problems{
+	background: #E20A0A;
+}
+.blu header.problems{
+	background: #1724A7;
+}
 header.problems{
 	color: white;
 }
@@ -113,10 +138,7 @@ footer{
 	padding-left: 3px;
 	border-top: dotted rgb(200,200,200) 2px;
 }
-#bottomFooter{
-	position: absolute;
-	bottom: 0px;
-}
+
 #banner{
 	width: 55%;
 }
@@ -143,11 +165,6 @@ input[type=range]{
 	background-size: cover;
 	background-color: black;
 	border-radius: 50%;
-}
-
-#new{
-	position: relative;
-	top: 20px;
 }
 
 @media screen and (max-width: 480px){

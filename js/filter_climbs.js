@@ -39,12 +39,12 @@ var NUG = $('#setBy option[value="NUG"]');
 var stepSlider = document.getElementById('slider-step');
 
 noUiSlider.create(stepSlider, {
-    start: [0, 12],
-    step: 1,
+    start: [2, 10],
+    step: 2,
     connect: true,
     range: {
-      'min': 0,
-      'max': 12
+      'min': 2,
+      'max': 10
     }
 });
 
@@ -54,7 +54,7 @@ var stepValues = [
 ];
 
 stepSlider.noUiSlider.on('update', function( values, handle ) {
-  stepValues[handle].innerHTML = "V"+Math.trunc(values[handle]);
+  //stepValues[handle].innerHTML = "V"+Math.trunc(values[handle]);
   filterClimbs();
 });
 //
