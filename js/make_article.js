@@ -190,10 +190,10 @@ climbs.push(noShoes);
 var ironCross = new Climb("Iron Cross", 1, '0', 'power', 'NUG', 5, 10, 2016, "http://i.imgur.com/PhmaQIj.jpg");
 climbs.push(ironCross);
 
-var bigPapaUndies = new Climb("Big Papa Undies", 1, '0', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/hFGTjYg.jpg");
+var bigPapaUndies = new Climb("Big Papa Undies", 5, 'b', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/hFGTjYg.jpg");
 climbs.push(bigPapaUndies);
 
-var crimpTrainer = new Climb("Crimp Trainer", 1, '0', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/gHlkubA.jpg");
+var crimpTrainer = new Climb("Crimp Trainer", 4, 'p', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/gHlkubA.jpg");
 climbs.push(crimpTrainer);
 
 var jugFeet = new Climb("Jug Feet", 1, '0', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/oJl4PRf.jpg");
@@ -220,54 +220,54 @@ climbs.push(marksProj);
 var markWins = new Climb("Mark Wins", 2, 'blu', 'oneMover', 'NUG', 5, 10, 2016, "http://i.imgur.com/IZdjmR6.jpg");
 climbs.push(markWins);
 
-var lockOffTrainer = new Climb("Lock Off Trainer", 1, '0', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/d4xD01J.jpg");
+var lockOffTrainer = new Climb("Lock Off Trainer", 2, 'blu', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/d4xD01J.jpg");
 climbs.push(lockOffTrainer);
 
-var blackScarabs = new Climb("Black Scarabs", 1, '0', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/0ZtfDeF.jpg");
+var blackScarabs = new Climb("Black Scarabs", 3, 'o', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/0ZtfDeF.jpg");
 climbs.push(blackScarabs);
 
 var theOG = new Climb("The OG", 3, 'o', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/jGfYq6y.jpg");
 climbs.push(theOG);
 
-var bigCrossLeft = new Climb("Big Cross Left", 1, '0', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/Yj8dkVw.jpg");
+var bigCrossLeft = new Climb("Big Cross Left", 3, 'o', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/Yj8dkVw.jpg");
 climbs.push(bigCrossLeft);
 
-var cross = new Climb("Cross", 1, '0', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/o889r1t.jpg");
+var cross = new Climb("Cross", 4, 'p', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/o889r1t.jpg");
 climbs.push(cross);
 
-var flagg = new Climb("Flagg", 1, '0', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/Kf0WnEf.jpg");
+var flagg = new Climb("Flagg", 3, 'o', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/Kf0WnEf.jpg");
 climbs.push(flagg);
 
 var gormenghast = new Climb("Gormenghast", 4, 'p', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/GuKGoOr.jpg");
 climbs.push(gormenghast);
 
-var heardYouLikeSofties = new Climb("Heard You Like Softies", 1, '0', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/yBHbe6l.jpg");
+var heardYouLikeSofties = new Climb("Heard You Like Softies", 2, 'blu', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/yBHbe6l.jpg");
 climbs.push(heardYouLikeSofties);
 
-var roseFinish = new Climb("Rose Finish", 1, '0', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/MfQldUs.jpg");
+var roseFinish = new Climb("Rose Finish", 3, 'o', 'power', 'MDG', 5, 10, 2016, "http://i.imgur.com/MfQldUs.jpg");
 climbs.push(roseFinish);
 
-var leftVar = new Climb("Left Var", 1, '0', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/1wNIqR0.jpg");
+var leftVar = new Climb("Left Var", 3, 'o', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/1wNIqR0.jpg");
 climbs.push(leftVar);
 
-var noHeels = new Climb("No Heels", 1, '0', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/JzJhhDO.jpg");
+var noHeels = new Climb("No Heels", 4, 'p', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/JzJhhDO.jpg");
 climbs.push(noHeels);
 
-var nugies = new Climb("Nugies", 1, '0', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/zkFSFk0.jpg");
+var nugies = new Climb("Nugies", 5, 'b', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/zkFSFk0.jpg");
 climbs.push(nugies);
 
-var rightVar = new Climb("Right Var", 1, '0', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/vws41x5.jpg");
+var rightVar = new Climb("Right Var", 4, 'p', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/vws41x5.jpg");
 climbs.push(rightVar);
 
-var shorty = new Climb("Shorty", 1, '0', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/V31i8pT.jpg");
+var shorty = new Climb("Shorty", 5, 'b', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/V31i8pT.jpg");
 climbs.push(shorty);
 
 var tallVersion = new Climb("Tall Version", 1, '0', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/SCeE2tn.jpg");
 
-var wodPenchLeft = new Climb("Wod Pench Left", 1, '0', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/1cOAq4z.jpg");
+var wodPenchLeft = new Climb("Wod Pench Left", 4, 'p', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/1cOAq4z.jpg");
 climbs.push(wodPenchLeft);
 
-var wodPenchRight = new Climb("Wod Pench Right", 1, '0', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/owUVr8k.jpg");
+var wodPenchRight = new Climb("Wod Pench Right", 3, 'o', 'power', 'DNA', 5, 10, 2016, "http://i.imgur.com/owUVr8k.jpg");
 climbs.push(wodPenchRight);
 
 
