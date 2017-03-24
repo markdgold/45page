@@ -6,7 +6,7 @@ function openModal(){
     modal.style.display = "block"; 
     var dataId = this.getAttribute('data-id');
     modalImg.src = climbs[dataId].climbImage;
-    captionText.innerHTML = climbs[dataId].displayName + ", "+climbs[dataId].displayGrade;
+    captionText.innerHTML = climbs[dataId].displayName /*+ ", "+climbs[dataId].displayGrade*/;
 }
 
 // Get the <span> element that closes the modal

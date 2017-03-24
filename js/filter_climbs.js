@@ -34,6 +34,7 @@ var AllSet = $('#setBy option[value="All"]');
 var MDG = $('#setBy option[value="MDG"]');
 var DNA = $('#setBy option[value="DNA"]');
 var NUG = $('#setBy option[value="NUG"]');
+var Drew = $('#setBy option[value="Drew"]');
 
 //grade selector
 var stepSlider = document.getElementById('slider-step');
@@ -103,6 +104,11 @@ function checkClimb(){
         }
         else if(NUG.prop('selected')){
             if(climbs[i].setBy != 'NUG'){
+                climb.css("display", "none");
+            }
+        }
+        else if(Drew.prop('selected')){
+            if(climbs[i].setBy != 'Drew'){
                 climb.css("display", "none");
             }
         }
