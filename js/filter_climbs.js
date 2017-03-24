@@ -39,12 +39,12 @@ var NUG = $('#setBy option[value="NUG"]');
 var stepSlider = document.getElementById('slider-step');
 
 noUiSlider.create(stepSlider, {
-    start: [2, 10],
-    step: 2,
+    start: [1, 5],
+    step: 1,
     connect: true,
     range: {
-      'min': 2,
-      'max': 10
+      'min': 1,
+      'max': 5
     }
 });
 
