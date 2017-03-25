@@ -49,10 +49,10 @@ noUiSlider.create(stepSlider, {
     }
 });
 
-var stepValues = [
+/*var stepValues = [
   document.getElementById('slider-step-value-lower'),
   document.getElementById('slider-step-value-upper')
-];
+];*/
 
 stepSlider.noUiSlider.on('update', function( values, handle ) {
   //stepValues[handle].innerHTML = "V"+Math.trunc(values[handle]);
@@ -127,4 +127,19 @@ enduroSelector.addEventListener('change', filterClimbs);
 techSelector.addEventListener('change',filterClimbs);
 oneMoverSelector.addEventListener('change',filterClimbs);
 newSelector.addEventListener('change',filterClimbs);
-setBySelector.addEventListener('change', filterClimbs); 
+setBySelector.addEventListener('change', filterClimbs);
+
+//reset button
+var resetButton = document.getElementById('reset');
+function reset(){
+    newSelector.checked = false;
+    document.getElementById('setBy').selectedIndex = 4;
+    powerSelector.checked = false;
+    crimpSelector.checked = false;
+    enduroSelector.checked = false;
+    oneMoverSelector.checked = false;
+    stepSlider.noUiSlider.set([1,5]);
+    filterClimbs();
+} 
+
+resetButton.addEventListener('click', reset);
