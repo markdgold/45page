@@ -30,10 +30,11 @@ var newSelector = document.querySelector('input[name=new]');
 var setBySelector = document.getElementById('setBy');
 var year = new Date().getFullYear();
 var month = new Date().getMonth()+1;
-var AllSet = $('#setBy option[value="All"]'); 
+var AllSet = $('#setBy option[value="All"]');
 var MDG = $('#setBy option[value="MDG"]');
 var DNA = $('#setBy option[value="DNA"]');
 var NUG = $('#setBy option[value="NUG"]');
+var TIGGY = $('#setBy option[value="TIGGY"]');
 var Drew = $('#setBy option[value="Drew"]');
 
 //grade selector
@@ -62,7 +63,7 @@ stepSlider.noUiSlider.on('update', function( values, handle ) {
 
 function checkClimb(){
     for(i=0;i<climbs.length;i++){
-        var climb = $('[data-id ='+i+']');        
+        var climb = $('[data-id ='+i+']');
         if(powerSelector.checked && climb.hasClass('power')){
             climb.css("display", "inline-block");
         }
@@ -99,6 +100,11 @@ function checkClimb(){
         }
         else if(DNA.prop('selected')){
             if(climbs[i].setBy != 'DNA'){
+                climb.css("display", "none");
+            }
+        }
+        else if(TIGGY.prop('selected')){
+            if(climbs[i].setBy != 'TIGGY'){
                 climb.css("display", "none");
             }
         }
@@ -140,6 +146,6 @@ function reset(){
     oneMoverSelector.checked = false;
     stepSlider.noUiSlider.set([1,5]);
     filterClimbs();
-} 
+}
 
 resetButton.addEventListener('click', reset);

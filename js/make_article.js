@@ -156,25 +156,25 @@ climbs.push(dyno);
 var theFuture = new Climb("The Future (hold for 3 sec)", 'blu', 'oneMover', 'MDG', 5, 10, 2016, "http://i.imgur.com/EXo4DXl.jpg");
 climbs.push(theFuture);
 
-var pinchTrifecta = new Climb("Pinch Trifecta", '0', 'power', 'NUG', 5, 10, 2016, "http://i.imgur.com/72862T0.jpg");
+var pinchTrifecta = new Climb("Pinch Trifecta", 'r', 'power', 'NUG', 5, 10, 2016, "http://i.imgur.com/72862T0.jpg");
 climbs.push(pinchTrifecta);
 
-var scarabs = new Climb("Scarabs", '0', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/skMeQJF.jpg");
+var scarabs = new Climb("Scarabs", 'r', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/skMeQJF.jpg");
 climbs.push(scarabs);
 
-var bn1 = new Climb("BN1", '0', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/rFAXEtU.jpg");
+var bn1 = new Climb("BN1", 'r', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/rFAXEtU.jpg");
 climbs.push(bn1);
 
-var bn2 = new Climb("BN2", '0', 'power', 'NUG', 5, 10, 2016, "http://i.imgur.com/0vR8H5l.jpg");
+var bn2 = new Climb("BN2", 'r', 'power', 'NUG', 5, 10, 2016, "http://i.imgur.com/0vR8H5l.jpg");
 climbs.push(bn2);
 
-var bn3 = new Climb("BN3", '0', 'power', 'NUG', 5, 10, 2016, "http://i.imgur.com/4MXTb5r.jpg");
+var bn3 = new Climb("BN3", 'r', 'power', 'NUG', 5, 10, 2016, "http://i.imgur.com/4MXTb5r.jpg");
 climbs.push(bn3);
 
-var bn4 = new Climb("BN4", '0', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/6LglAb2.jpg");
+var bn4 = new Climb("BN4", 'r', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/6LglAb2.jpg");
 climbs.push(bn4);
 
-var bn5 = new Climb('BN5', '0', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/TM0YD46.jpg");
+var bn5 = new Climb('BN5', 'r', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/TM0YD46.jpg");
 climbs.push(bn5);
 
 var bn6 = new Climb('BN6', 'o', 'power', 'NUG', 5, 10, 2016, "http://i.imgur.com/N5uuhRn.jpg");
@@ -183,13 +183,13 @@ climbs.push(bn6);
 var bn7 = new Climb("BN7", 'o', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/wxeGL6F.jpg");
 climbs.push(bn7);
 
-var bn8 = new Climb("BN8", '0', 'power', 'NUG', 5, 10, 2016, "http://i.imgur.com/0SE4fvH.jpg");
+var bn8 = new Climb("BN8", 'r', 'power', 'NUG', 5, 10, 2016, "http://i.imgur.com/0SE4fvH.jpg");
 climbs.push(bn8);
 
-var noShoes = new Climb("No Shoes", '0', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/WI3GFEM.jpg");
+var noShoes = new Climb("No Shoes", 'r', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/WI3GFEM.jpg");
 climbs.push(noShoes);
 
-var ironCross = new Climb("Iron Cross", '0', 'power', 'NUG', 5, 10, 2016, "http://i.imgur.com/PhmaQIj.jpg");
+var ironCross = new Climb("Iron Cross", 'r', 'power', 'NUG', 5, 10, 2016, "http://i.imgur.com/PhmaQIj.jpg");
 climbs.push(ironCross);
 
 var bigPapaUndies = new Climb("Big Papa Undies", 'b', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/hFGTjYg.jpg");
@@ -198,19 +198,19 @@ climbs.push(bigPapaUndies);
 var crimpTrainer = new Climb("Crimp Trainer", 'p', 'crimp', 'DNA', 5, 10, 2016, "http://i.imgur.com/gHlkubA.jpg");
 climbs.push(crimpTrainer);
 
-var jugFeet = new Climb("Jug Feet", '0', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/oJl4PRf.jpg");
+var jugFeet = new Climb("Jug Feet", 'r', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/oJl4PRf.jpg");
 climbs.push(jugFeet);
 
-var brianWins = new Climb("Brian Wins", '0', 'power', 'NUG', 5, 10, 2016, "http://i.imgur.com/uWE5oYx.jpg");
+var brianWins = new Climb("Brian Wins", 'r', 'power', 'NUG', 5, 10, 2016, "http://i.imgur.com/uWE5oYx.jpg");
 climbs.push(brianWins);
 
-var bumpDyno = new Climb("Bump Dyno (bump to finish hold)", '0', 'oneMover', 'NUG', 5, 10, 2016, "http://i.imgur.com/8zW8fIF.jpg");
+var bumpDyno = new Climb("Bump Dyno (bump to finish hold)", 'r', 'oneMover', 'NUG', 5, 10, 2016, "http://i.imgur.com/8zW8fIF.jpg");
 climbs.push(bumpDyno);
 
-var campus = new Climb("Campus", '0', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/8H7F1uO.jpg");
+var campus = new Climb("Campus", 'r', 'crimp', 'NUG', 5, 10, 2016, "http://i.imgur.com/8H7F1uO.jpg");
 climbs.push(campus);
 
-var crimpterbator = new Climb("Crimpterbator", '0', 'enduro', 'NUG', 5, 10, 2016, "http://i.imgur.com/sDKlkCv.jpg");
+var crimpterbator = new Climb("Crimpterbator", 'r', 'enduro', 'NUG', 5, 10, 2016, "http://i.imgur.com/sDKlkCv.jpg");
 climbs.push(crimpterbator);
 
 var pinchShuffle = new Climb("Pinch Shuffle", 'o', 'power', 'NUG', 5, 10, 2016, "http://i.imgur.com/avf0hHa.jpg");
@@ -293,9 +293,6 @@ climbs.push(oneArmCampus);
 var underclingMadness = new Climb("Undercling Madness", 'b', 'power', 'Drew', 5, 10, 2016, 'img/Undercling_Madness.jpg');
 climbs.push(underclingMadness);
 
-
-
-
 var pinchPunch = new Climb("Pinch Punch", 'p', 'power', "MDG", 3, 2, 2017, "http://i.imgur.com/ZP4bFn5.jpg");
 climbs.unshift(pinchPunch);
 
@@ -311,6 +308,11 @@ climbs.unshift(JS);
 var moon6b = new Climb("Moon 6B", 'o', 'power', "MDG", 3, 19, 2017, "http://i.imgur.com/PMFpw9O.jpg");
 climbs.unshift(moon6b);
 
+var vtc1 = new Climb("VTC1", 'p', 'power', 'TIGGY', 3, 28, 2017, 'img/vtc1.JPG')
+climbs.unshift(vtc1);
+
+var vtc2 = new Climb("VTC2", 'p', 'power', 'TIGGY', 3, 28, 2017, 'img/vtc2.jpg')
+climbs.unshift(vtc2);
 
 
 makeClimbs();
