@@ -139,7 +139,7 @@ setBySelector.addEventListener('change', filterClimbs);
 var resetButton = document.getElementById('reset');
 function reset(){
     newSelector.checked = false;
-    document.getElementById('setBy').selectedIndex = 4;
+    document.getElementById('setBy').selectedIndex = 5;
     powerSelector.checked = false;
     crimpSelector.checked = false;
     enduroSelector.checked = false;
